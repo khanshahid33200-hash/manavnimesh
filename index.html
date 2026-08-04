@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manav Nimesh - Science Teacher, Private Tutor & Educational Consultant specializing in Physics, Chemistry, and Mathematics. M.Sc. Chemistry, B.Sc. B.Ed., CTET & REET Qualified.">
+  <title>Manav Nimesh | Science Teacher, Private Tutor & Educational Consultant</title>
+  <!-- Google Fonts: Inter & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+
+  <!-- Background Canvas Animation -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="./" class="logo">
+        <span class="logo-bold">MANAV</span> NIMESH
+      </a>
+
+      <!-- Clean 4-Page Navigation -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="./" class="nav-link active">Home</a>
+        <a href="about" class="nav-link">About</a>
+        <a href="services" class="nav-link">Services</a>
+        <a href="contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Hire Me Button -->
+        <a href="contact" class="btn btn-primary btn-sm nav-hire-btn">
+          <i class="fa-solid fa-user-plus"></i> Hire Me
+        </a>
+
+        <!-- PDF Resume Download Button -->
+        <a href="MANAV_NIMESH_RESUME.pdf" download="MANAV_NIMESH_RESUME.pdf" target="_blank" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-file-pdf"></i> Download PDF
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section with 2-Column Split -->
+    <section class="hero-section">
+      <div class="hero-container-split">
+        <!-- Left Content Column -->
+        <div class="hero-left-col">
+          <div class="hero-badges-wrapper">
+            <span class="hero-badge badge-highlight"><i class="fa-solid fa-user-graduate"></i> Private Tutor</span>
+            <span class="hero-badge"><i class="fa-solid fa-compass-drafting"></i> Educational Consultant</span>
+            <span class="hero-badge"><span class="pulse-dot"></span> CTET & REET Qualified</span>
+          </div>
+
+          <h1 class="hero-title">
+            Empowering Minds as a <span class="text-highlight">Science Educator & Consultant</span>
+          </h1>
+          <p class="hero-subtitle">
+            Dedicated Science Teacher, Private Tutor & Educational Consultant specializing in Physics, Chemistry, and Mathematics for secondary and higher secondary students.
+          </p>
+
+          <div class="hero-cta">
+            <a href="contact" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-handshake"></i> Hire Me as a Private Tutor
+            </a>
+            <a href="services" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-chalkboard-user"></i> Explore All Services
+            </a>
+            <a href="MANAV_NIMESH_RESUME.pdf" download="MANAV_NIMESH_RESUME.pdf" target="_blank" class="btn btn-outline btn-lg">
+              <i class="fa-solid fa-file-pdf"></i> Download Resume (PDF)
+            </a>
+          </div>
+
+          <!-- Quick Metrics Grid -->
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <div class="metric-number">Private Tutor</div>
+              <div class="metric-label">1-on-1 & Batch Tuition</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-number">Consultant</div>
+              <div class="metric-label">Academic & Career Guidance</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-number">M.Sc.</div>
+              <div class="metric-label">Chemistry Specialist</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-number">CTET & REET</div>
+              <div class="metric-label">Certified Educator</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Studio Profile Hero Card -->
+        <div class="hero-right-col">
+          <div class="hero-profile-card">
+            <div class="profile-img-frame">
+              <img src="profile.jpg" alt="Manav Nimesh - Science Educator & Educational Consultant" class="hero-profile-img">
+            </div>
+            <div class="profile-card-footer">
+              <div class="profile-name">MANAV NIMESH</div>
+              <div class="profile-title">M.Sc. Chemistry & B.Ed. | Educator & Educational Consultant</div>
+              <div class="profile-location"><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Value Proposition Section: Why Choose Manav Nimesh -->
+    <section class="section-padding section-alt-bg">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">TEACHING EXCELLENCE</span>
+          <h2 class="section-title">Why Students & Parents Choose Manav Nimesh</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="strengths-grid">
+          <div class="strength-card">
+            <i class="fa-solid fa-brain"></i>
+            <h4>Concept-Building Method</h4>
+            <p>Moving away from rote memorization. Establishing crystal-clear core fundamentals in Physics, Chemistry, and Math.</p>
+          </div>
+
+          <div class="strength-card">
+            <i class="fa-solid fa-user-check"></i>
+            <h4>1-on-1 Personalized Pace</h4>
+            <p>Customizing problem sets, explanation speed, and doubt sessions to match every student's learning style.</p>
+          </div>
+
+          <div class="strength-card">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <h4>Board Exam Precision</h4>
+            <p>10-year question paper analysis, step-wise formula marking, and exam presentation strategies for top marks.</p>
+          </div>
+
+          <div class="strength-card">
+            <i class="fa-solid fa-compass-drafting"></i>
+            <h4>Educational Consultancy</h4>
+            <p>Strategic academic stream guidance (PCM vs PCB), school lab setup advice, and career path counselling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Services Showcase Section (4 Cards) -->
+    <section class="section-padding">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">SERVICES OFFERED</span>
+          <h2 class="section-title">Comprehensive Educational Services</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1: Home & Online Tutoring -->
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-house-laptop"></i></div>
+            <span class="service-tag">1-on-1 Tuition</span>
+            <h3>Home & Online Private Tuition</h3>
+            <p>Personalized 1-on-1 tutoring sessions for Physics, Chemistry, and Mathematics (Classes 6 to 12) delivered at home in Jaipur or via live online video classes.</p>
+            <a href="services#tutoring" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Service 2: Educational Consultancy -->
+          <div class="service-card highlight-card">
+            <div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+            <span class="service-tag">Consultancy</span>
+            <h3>Educational Consultancy</h3>
+            <p>Academic stream guidance (PCM/PCB), career counselling for higher science studies, school lab setup advice, and teacher training workshops.</p>
+            <a href="services#consultancy" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Service 3: Board Exam Prep -->
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-pen-to-square"></i></div>
+            <span class="service-tag">Exam Focused</span>
+            <h3>Board & Competitive Exam Prep</h3>
+            <p>Intensive crash courses, mock test series, previous 10-year question paper solving, and paper writing techniques for Class 10 & 12 Boards (CBSE/RBSE).</p>
+            <a href="services#board-prep" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <!-- Service 4: School Faculty -->
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-school"></i></div>
+            <span class="service-tag">School Faculty</span>
+            <h3>School Faculty & Coaching Batches</h3>
+            <p>CTET & REET certified Science and Chemistry teacher for full-time or visiting positions in reputed schools and coaching institutes.</p>
+            <a href="services#school-faculty" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Step-by-Step Learning Framework -->
+    <section class="section-padding section-alt-bg">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">PEDAGOGY</span>
+          <h2 class="section-title">The 4-Step Student Success Framework</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="framework-steps-grid">
+          <div class="step-card">
+            <div class="step-number">01</div>
+            <h3>Diagnostic & Goal Setting</h3>
+            <p>Assessing student strengths, identifying weak areas in Physics/Chemistry/Math, and defining a clear target for school & board exams.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">02</div>
+            <h3>Concept & Numerical Mastery</h3>
+            <p>Step-by-step topic breakdown using real-life examples, formulas, chemical equations, and structured numerical practice.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">03</div>
+            <h3>Timed Testing & Error Analysis</h3>
+            <p>Conducting weekly chapter tests, reviewing mistakes line-by-line, and refining answer presentation techniques for maximum marks.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">04</div>
+            <h3>Feedback & Parent Updates</h3>
+            <p>Regular communication with parents regarding student progress, attendance, test scores, and upcoming exam milestones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Key Academic Subjects Taught -->
+    <section class="section-padding">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">CURRICULUM</span>
+          <h2 class="section-title">Core Academic Subjects Taught</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="subjects-grid">
+          <div class="subject-box">
+            <div class="sub-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+            <h3>Chemistry (Classes 9–12)</h3>
+            <p>Organic Chemistry Reaction Mechanisms, Physical Chemistry Calculations, Periodic Table Trends, Chemical Bonding & Titration Practical Guidance.</p>
+          </div>
+
+          <div class="subject-box">
+            <div class="sub-icon"><i class="fa-solid fa-atom"></i></div>
+            <h3>Physics (Classes 9–12)</h3>
+            <p>Newtonian Mechanics, Thermodynamics, Optics, Electricity & Magnetism, Ray Diagrams, and Physics Numerical Solving.</p>
+          </div>
+
+          <div class="subject-box">
+            <div class="sub-icon"><i class="fa-solid fa-square-root-variable"></i></div>
+            <h3>Mathematics (Classes 6–10)</h3>
+            <p>Algebraic Expressions, Geometry Proofs, Trigonometry Identities, Linear Equations, Mensuration & Board Exam Paper Solving.</p>
+          </div>
+
+          <div class="subject-box">
+            <div class="sub-icon"><i class="fa-solid fa-microscope"></i></div>
+            <h3>General Science (Classes 6–8)</h3>
+            <p>Foundation Science covering basic Physics, Chemistry, and Biology to instill curiosity and strong scientific temperament early on.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Qualifications & Certifications Summary -->
+    <section class="section-padding section-alt-bg">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">CREDENTIALS</span>
+          <h2 class="section-title">Qualifications & Teacher Eligibility</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Degrees & Academic Background</h3>
+            <ul class="preview-cert-list">
+              <li><i class="fa-solid fa-check-double"></i> <strong>M.Sc. Chemistry (2025)</strong> — University of Rajasthan, Jaipur</li>
+              <li><i class="fa-solid fa-check-double"></i> <strong>B.Sc. B.Ed. PCM (2023)</strong> — University of Rajasthan, Jaipur</li>
+              <li><i class="fa-solid fa-check-double"></i> <strong>BCA (Expected 2026)</strong> — VMOU Kota</li>
+            </ul>
+            <div style="margin-top: 20px;">
+              <a href="about#academics" class="btn btn-secondary btn-sm">Read Full Academic Details <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <div class="card-icon"><i class="fa-solid fa-certificate"></i></div>
+            <h3>Government Credentials</h3>
+            <ul class="preview-cert-list">
+              <li><i class="fa-solid fa-certificate"></i> <strong>CTET (2024)</strong> — CBSE National Teacher Eligibility Test</li>
+              <li><i class="fa-solid fa-award"></i> <strong>REET (2025)</strong> — Rajasthan Teacher Eligibility Test</li>
+              <li><i class="fa-solid fa-laptop"></i> <strong>RSCIT (2021)</strong> — Rajasthan State IT Certification</li>
+              <li><i class="fa-solid fa-file-code"></i> <strong>IP CBSE (2018)</strong> — Senior Secondary Information Practices</li>
+            </ul>
+            <div style="margin-top: 20px;">
+              <a href="about" class="btn btn-secondary btn-sm">Read Certifications Overview <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Embedded Quick Contact & Submission Section -->
+    <section class="section-padding">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">HIRE ME</span>
+          <h2 class="section-title">Submit Details / Inquire for Tutoring</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-col">
+            <h3 class="contact-col-title">Get In Touch Directly</h3>
+            <p class="contact-intro">
+              Connect to schedule a free demo class, arrange home tuition in Jaipur, live online batches, or educational consultancy.
+            </p>
+
+            <div class="info-item-card">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="info-details">
+                <span>Phone Number</span>
+                <a href="tel:8739997065">+91 8739997065</a>
+              </div>
+            </div>
+
+            <div class="info-item-card">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-details">
+                <span>Email Address</span>
+                <a href="mailto:manavnimesh12@gmail.com">manavnimesh12@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="info-item-card">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-details">
+                <span>Location</span>
+                <p>Jaipur, Rajasthan, India</p>
+              </div>
+            </div>
+
+            <div class="info-item-card" style="margin-top: 20px;">
+              <a href="MANAV_NIMESH_RESUME.pdf" download="MANAV_NIMESH_RESUME.pdf" target="_blank" class="btn btn-outline btn-block">
+                <i class="fa-solid fa-file-pdf"></i> Download Official Resume PDF
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Form -->
+          <div class="contact-form-col">
+            <form id="portfolio-contact-form" class="contact-form" novalidate>
+              <h3 class="form-title"><i class="fa-solid fa-paper-plane"></i> Quick Tutoring Inquiry</h3>
+              
+              <div class="form-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                <span class="error-msg" id="name-error">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <span class="error-msg" id="phone-error">Please enter a valid phone number</span>
+              </div>
+
+              <div class="form-group">
+                <label for="inquiry-type">Service Required <span class="required">*</span></label>
+                <select id="inquiry-type" name="inquiry-type" class="form-select" required>
+                  <option value="private-tutoring">Hire as Private Tutor (Home / Online)</option>
+                  <option value="educational-consultancy">Educational Consultancy & Stream Guidance</option>
+                  <option value="demo-class">Request a Free Demo Class</option>
+                  <option value="board-prep">Board Exam Crash Course</option>
+                  <option value="school-faculty">School / Coaching Teacher Role</option>
+                  <option value="general-inquiry">General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Requirements / Details <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="3" placeholder="Class grade, subject, location in Jaipur, or questions..." required></textarea>
+                <span class="error-msg" id="message-error">Please enter your requirements</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit-btn">
+                <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Submit Details & Hire</span>
+                <span class="spinner hidden"></span>
+              </button>
+
+              <div id="form-alert" class="form-alert hidden"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CTA Banner Section -->
+    <section class="cta-banner-section">
+      <div class="section-container text-center">
+        <h2 class="cta-title">Looking for a Private Science Tutor or Educational Consultant?</h2>
+        <p class="cta-subtitle">Connect today to schedule a free demo class, arrange home tuition, or consult on academic guidance.</p>
+        <div class="cta-buttons">
+          <a href="contact" class="btn btn-primary btn-lg"><i class="fa-solid fa-paper-plane"></i> Go to Full Contact & Hire Page</a>
+          <a href="MANAV_NIMESH_RESUME.pdf" download="MANAV_NIMESH_RESUME.pdf" target="_blank" class="btn btn-outline btn-lg"><i class="fa-solid fa-file-pdf"></i> Download Resume PDF</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>&copy; 2026 <strong>Manav Nimesh</strong> — Science Educator, Private Tutor & Educational Consultant.</p>
+      </div>
+      <div class="footer-links">
+        <a href="./">Home</a>
+        <a href="about">About</a>
+        <a href="services">Services</a>
+        <a href="contact">Contact</a>
+        <a href="MANAV_NIMESH_RESUME.pdf" download="MANAV_NIMESH_RESUME.pdf" target="_blank">Download Resume PDF</a>
+      </div>
+      <div class="footer-right">
+        <a href="#navbar" class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i> Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

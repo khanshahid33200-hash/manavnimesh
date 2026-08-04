@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Manav Nimesh - Hire for Private Tutoring (Home / Online), Educational Consultancy, or School Faculty Positions in Physics, Chemistry, and Mathematics. Phone: 8739997065.">
+  <title>Contact & Hire | Manav Nimesh - Science Tutor & Educational Consultant</title>
+  <!-- Google Fonts: Inter & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="light-theme">
+
+  <!-- Background Canvas Animation -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="../" class="logo">
+        <span class="logo-bold">MANAV</span> NIMESH
+      </a>
+
+      <!-- Clean 4-Page Navigation -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="../" class="nav-link">Home</a>
+        <a href="../about" class="nav-link">About</a>
+        <a href="../services" class="nav-link">Services</a>
+        <a href="../contact" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Hire Me Button -->
+        <a href="../contact" class="btn btn-primary btn-sm nav-hire-btn">
+          <i class="fa-solid fa-user-plus"></i> Hire Me
+        </a>
+
+        <!-- PDF Resume Download Button -->
+        <a href="../MANAV_NIMESH_RESUME.pdf" download="MANAV_NIMESH_RESUME.pdf" target="_blank" class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-file-pdf"></i> Download PDF
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header Banner -->
+    <section class="page-header-banner">
+      <div class="section-container">
+        <span class="section-tag">GET IN TOUCH</span>
+        <h1 class="page-title">Submit Details / Contact Form</h1>
+        <p class="page-description">
+          Parents, students, and school administrators are welcome to submit details below for Private Tutoring, Educational Consultancy, Free Demo Classes, or School Faculty roles.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Contact & Hiring Section -->
+    <section class="section-padding">
+      <div class="section-container">
+        <div class="contact-grid">
+          <!-- Left Column: Direct Contact Information -->
+          <div class="contact-info-col">
+            <h2 class="contact-col-title">Direct Contact Information</h2>
+            <p class="contact-intro">
+              Reach out directly via phone or email for urgent inquiries regarding home tuition in Jaipur, live online classes, or educational consultancy.
+            </p>
+
+            <div class="info-item-card">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="info-details">
+                <span>Phone Number</span>
+                <a href="tel:8739997065">+91 8739997065</a>
+              </div>
+            </div>
+
+            <div class="info-item-card">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-details">
+                <span>Email Address</span>
+                <a href="mailto:manavnimesh12@gmail.com">manavnimesh12@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="info-item-card">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-details">
+                <span>Location & Coverage</span>
+                <p>Jaipur, Rajasthan, India (Home Tuition & Online)</p>
+              </div>
+            </div>
+
+            <div class="info-item-card">
+              <div class="info-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+              <div class="info-details">
+                <span>Services Provided</span>
+                <p>Private Tuition, Educational Consultancy, Board Prep</p>
+              </div>
+            </div>
+
+            <div class="info-item-card">
+              <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="info-details">
+                <span>Tutoring Hours</span>
+                <p>Monday – Saturday: 4:00 PM – 9:00 PM</p>
+              </div>
+            </div>
+
+            <div class="info-item-card" style="margin-top: 20px;">
+              <a href="../MANAV_NIMESH_RESUME.pdf" download="MANAV_NIMESH_RESUME.pdf" target="_blank" class="btn btn-outline btn-block">
+                <i class="fa-solid fa-file-pdf"></i> Download Official Resume PDF
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Hiring & Details Form -->
+          <div class="contact-form-col">
+            <form id="portfolio-contact-form" class="contact-form" novalidate>
+              <h2 class="form-title"><i class="fa-solid fa-paper-plane"></i> Submit Your Requirements</h2>
+              
+              <div class="form-group">
+                <label for="name">Your Full Name (Parent / Student / School) <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="e.g. Rajesh Kumar" required>
+                <span class="error-msg" id="name-error">Please enter your full name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Mobile Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 9876543210" required>
+                <span class="error-msg" id="phone-error">Please enter a valid phone number</span>
+              </div>
+
+              <div class="form-group">
+                <label for="inquiry-type">Service / Inquiry Required <span class="required">*</span></label>
+                <select id="inquiry-type" name="inquiry-type" class="form-select" required>
+                  <option value="private-tutoring">Hire as Private Tutor (Home / Online)</option>
+                  <option value="educational-consultancy">Educational Consultancy & Stream Guidance</option>
+                  <option value="demo-class">Request a Free Demo Class</option>
+                  <option value="board-prep">Board Exam Crash Course (Class 10 / 12)</option>
+                  <option value="school-faculty">School / Institute Teacher Faculty Position</option>
+                  <option value="general-inquiry">General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Student Details & Subject Requirements <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="4" placeholder="Mention class grade (e.g. Class 10 Science, Class 12 Chemistry), board (CBSE/RBSE), home tuition area in Jaipur, or preferred timings..." required></textarea>
+                <span class="error-msg" id="message-error">Please provide details regarding your requirements</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit-btn">
+                <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> Submit Details & Hire</span>
+                <span class="spinner hidden"></span>
+              </button>
+
+              <div id="form-alert" class="form-alert hidden"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding section-alt-bg">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">COMMON QUESTIONS</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-card">
+            <h3>Q: How can I schedule a Free Demo Class?</h3>
+            <p>You can request a free demo class by filling out the submit form above or calling directly at <strong>+91 8739997065</strong>. We will arrange a convenient time for an initial 45-minute demo session.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>Q: Which areas in Jaipur are covered for Home Tuition?</h3>
+            <p>Home tuition is available across major residential areas in Jaipur. Online live video tuition is available for students across India.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>Q: What is Educational Consultancy?</h3>
+            <p>Educational consultancy involves career stream guidance for students (choosing PCM vs PCB), academic roadmap planning, and advising schools on science lab setup and curriculum execution.</p>
+          </div>
+
+          <div class="faq-card">
+            <h3>Q: Which classes and subjects do you teach?</h3>
+            <p>Private tuition and coaching are available for Science and Math (Classes 6th to 10th) and Chemistry & Physics (Classes 11th & 12th) aligned with CBSE and RBSE syllabi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>&copy; 2026 <strong>Manav Nimesh</strong> — Science Educator, Private Tutor & Educational Consultant.</p>
+      </div>
+      <div class="footer-links">
+        <a href="../">Home</a>
+        <a href="../about">About</a>
+        <a href="../services">Services</a>
+        <a href="../contact">Contact</a>
+        <a href="../MANAV_NIMESH_RESUME.pdf" download="MANAV_NIMESH_RESUME.pdf" target="_blank">Download Resume PDF</a>
+      </div>
+      <div class="footer-right">
+        <a href="#navbar" class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i> Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
