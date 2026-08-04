@@ -376,6 +376,40 @@ a {
   margin: 0 auto;
 }
 
+/* Legal & Policy Pages Content Box */
+.legal-content-box {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 48px;
+  border-radius: 20px;
+  box-shadow: var(--card-shadow);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.legal-content-box h2 {
+  font-size: 1.6rem;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+.legal-content-box h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content-box p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.legal-content-box ul {
+  margin-bottom: 20px;
+}
+
 /* Hero Section Split Layout */
 .hero-section {
   padding: 150px 24px 80px;
@@ -552,7 +586,7 @@ a {
   gap: 6px;
 }
 
-/* Framework Steps Grid (4-Step Student Success) */
+/* Framework Steps Grid */
 .framework-steps-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1372,7 +1406,7 @@ body.dark-theme .form-select:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   color: var(--text-secondary);
   flex-wrap: wrap;
   gap: 20px;
@@ -1381,7 +1415,8 @@ body.dark-theme .form-select:focus {
 .footer-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .footer-links a {
